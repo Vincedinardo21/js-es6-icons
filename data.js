@@ -121,7 +121,8 @@ for(let key in icons){
 	myContainer.append(myCard);
 
 	let icona = document.createElement("i");
-	//icona.classList.add(".fas .fa-cat");
+	icona.classList.add("fas");
+	icona.classList.add("fa-cat");
 	icona.append("");
 	myCard.append(icona);
 
