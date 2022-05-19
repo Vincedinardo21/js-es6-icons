@@ -115,11 +115,12 @@ const icons = [
 
 let myContainer = document.querySelector(".container");
 
-
-for(let i = 0; i < icons.length; i++){
+for(let key in icons){
 	let myCard = document.createElement("div");
 	myCard.classList.add("card");
-	myCard.append("test");
+	// myCard.append("test");
 	myContainer.append(myCard);
+	let icona = document.createElement("h2");
+	icona.append(icons[key].name);
+	myCard.append(icona);
 }
-
