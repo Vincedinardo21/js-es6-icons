@@ -1,4 +1,4 @@
-[
+const icons = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,14 @@
 		color: 'blue'
 	}
 ];
+
+let myContainer = document.querySelector(".container");
+
+
+for(let i = 0; i < icons.length; i++){
+	let myCard = document.createElement("div");
+	myCard.classList.add("card");
+	myCard.append("test");
+	myContainer.append(myCard);
+}
+
