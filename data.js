@@ -114,6 +114,24 @@ const icons = [
 ];
 
 let myContainer = document.querySelector(".container");
+let clicked = document.getElementById("clicked");
+
+clicked.addEventListener("change", 
+	function(){
+		console.log("selezionato: ", this.value);
+
+		// Cambiare con uno switch
+		if(this.value === "all"){
+			console.log("Selezionati tutti");
+		} else if(this.value === "animal") {
+			console.log("Selezionati solo animali");
+		} else if(this.value === "vegetable") {
+			console.log("Selezionati solo i vegetali");
+		} else if(this.value === "user") {
+			console.log("Selezionati solo gli users");
+		}
+	}
+);
 
 for(let key in icons){
 	let myCard = document.createElement("div");
