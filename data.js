@@ -122,7 +122,7 @@ for(let key in icons){
 
 	let icona = document.createElement("i");
 	icona.classList.add("fas");
-	icona.classList.add("fa-cat");
+	icona.classList.add(icons[key].prefix + (icons[key].name));
 	icona.append("");
 	myCard.append(icona);
 
