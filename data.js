@@ -120,6 +120,7 @@ for(let key in icons){
 	myCard.classList.add("card");
 	myContainer.append(myCard);
 
+	// Icone
 	let icona = document.createElement("i");
 	icona.classList.add("fas");
 	icona.classList.add(icons[key].prefix + (icons[key].name));
@@ -127,6 +128,7 @@ for(let key in icons){
 	icona.append("");
 	myCard.append(icona);
 
+	// Nomi
 	let nomeIcona = document.createElement("span");
 	nomeIcona.append(icons[key].name);
 	myCard.append(nomeIcona);
